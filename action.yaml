@@ -1,10 +1,18 @@
 name: 'Hello World'
 description: 'Fetch secrets from hashicorp vault'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  vault_url:
+    description: 'VAULT url/endpoint'
     required: true
-    default: 'World'
+  project:
+    description: 'Project Name'
+    required: true
+  environment:
+    description: 'Environment Name'
+    required: true
+  secrets:
+    description: 'Secrets name'
+    required: false
 outputs:
   time: # id of output
     description: 'The time we greeted you'
@@ -12,4 +20,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.vaul_url }}
+    - ${{ inputs.project }}
+    - ${{ inputs.environment }}
+    - ${{ inputs.secrets }}
