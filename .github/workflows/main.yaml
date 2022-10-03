@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Fetch vault secrts
+        id: hello
+        uses: ./
+        with:
+          vault_url: "https://vault.internal-staging.opn.dev"
+          project: "opn-internal"
+          environment: "staging"
+          secrets: |
+           - "foo"
+           - "bar"

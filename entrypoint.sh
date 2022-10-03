@@ -9,7 +9,7 @@ echo "VAULT url: $VAULT_URL"
 echo "Project name: $PROJECT_NAME"
 echo "Environment name: $ENVIRONMENT"
 
-for i in SECRETS
+for i in ${SECRETS}
 do
  echo "Secrets name: $i"
 done
