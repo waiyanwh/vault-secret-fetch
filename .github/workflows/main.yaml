@@ -20,4 +20,4 @@ jobs:
 
       - name: Get output
         run: | 
-          echo "The secrets are ${{ steps.hello.outputs.time }}"
+          echo "The secrets are ${{ steps.hello.outputs.action_fruit }}"

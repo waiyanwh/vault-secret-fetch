@@ -14,8 +14,10 @@ inputs:
     description: 'Secrets name'
     required: false
 outputs:
-  time:
+  blah:
     description: 'The time we greeted you'
+  action_fruit:
+    description: 'test'
 runs:
   using: 'docker'
   image: 'Dockerfile'
