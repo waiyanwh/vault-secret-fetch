@@ -15,5 +15,5 @@ jobs:
           project: "opn-internal"
           environment: "staging"
           secrets: |
-           - "foo"
-           - "bar"
+           "foo"
+           "bar"
