@@ -17,3 +17,6 @@ jobs:
           secrets: |
            "foo"
            "bar"
+      - name: Get output
+        run: | 
+          echo "The secrets are ${{ steps.hello.outputs.foo }}"
