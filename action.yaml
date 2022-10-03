@@ -13,6 +13,9 @@ inputs:
   secrets:
     description: 'Secrets name'
     required: false
+outputs:
+  time:
+    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'
