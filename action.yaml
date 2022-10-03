@@ -17,7 +17,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.vaul_url }}
+    - ${{ inputs.vault_url }}
     - ${{ inputs.project }}
     - ${{ inputs.environment }}
     - ${{ inputs.secrets }}
