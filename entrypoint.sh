@@ -13,5 +13,5 @@ time=$(date)
 #  echo "::set-output name=secrets::$time"
 # done
 
-echo "::set-output name=blah::$time"
+# echo "::set-output name=blah::$time"
 echo "::set-output name=action_fruit::strawberry"
