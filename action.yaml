@@ -13,11 +13,6 @@ inputs:
   secrets:
     description: 'Secrets name'
     required: false
-outputs:
-  blah:
-    description: 'The time we greeted you'
-  action_fruit:
-    description: 'test'
 runs:
   using: 'docker'
   image: 'Dockerfile'
